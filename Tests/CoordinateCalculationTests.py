@@ -1,4 +1,7 @@
 __author__ = 'William'
+import sys,os.path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 import unittest
 from Logic.CoordinateCalculations import *
 

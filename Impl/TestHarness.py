@@ -1,5 +1,8 @@
 __author__ = 'William'
 import os
+import sys,os.path
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from Logic.CoordinateCalculations import *
 from Logic.GPXparser import *
 from Impl.Visual import *
