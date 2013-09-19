@@ -18,4 +18,6 @@ class Visual:
                 break
             self.screen.fill((255, 255, 255))
             self.screen.blit(self.font.render(self.text, True, (0, 0, 0)), (100, 100))
+            pygame.draw.line(self.screen,  (0, 0, 0), (20, 375), (500, 375))
+            pygame.draw.line(self.screen,  (0, 0, 0), (20, 10), (20, 375))
             pygame.display.update()

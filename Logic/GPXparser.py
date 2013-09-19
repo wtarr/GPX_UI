@@ -24,6 +24,8 @@ class GPXparser:
         soup = BeautifulSoup(data)
         trkptsxml = soup.find_all('trkpt')
         for trkPt in trkptsxml:
+            print trkPt
+            print '\n\n'
             allTrackPoints.append(self.mapXMLElementToObject(trkPt))
         return allTrackPoints
 
